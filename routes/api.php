@@ -6,10 +6,10 @@ $pokemonController = new PokemonController();
 $trainerController = new TrainerController();
 
 $requestUri = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
-$endpoint = $requestUri[2] ?? '';
-$id = $requestUri[3] ?? null;
-$subEndpoint = $requestUri[4] ?? null;
-$subId = $requestUri[5] ?? null;
+$endpoint = $requestUri[1] ?? '';
+$id = $requestUri[2] ?? null;
+$subEndpoint = $requestUri[3] ?? null;
+$subId = $requestUri[4] ?? null;
 
 header('Content-Type: application/json');
 

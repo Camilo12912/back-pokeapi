@@ -3,5 +3,5 @@
     RewriteBase /PokeAPI/
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^ routes/api.php [QSA,L]
+    RewriteRule ^(.*)$ routes/api.php [QSA,L]
 </IfModule>
